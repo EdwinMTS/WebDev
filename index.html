@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first website</title>
+  </head>
+  <body>
     <h1>My first webpage</h1>
-    <img src="img/MonkIA.jpeg" alt="picture of the logo of the Lan for March 2023" height="200">
-    <audio src="music.mp3" controls autoplay muted loop>
-        <source src="music.mp3">
-        <source src="img/MonkIA.jpeg">
-        This browser doesn't support these formats
+    <img
+      src="img/MonkIA.jpeg"
+      alt="picture of the logo of the Lan for March 2023"
+      height="200"
+    />
+    <audio controls autoplay muted loop>
+      <source src="img/music.mp3" />
+      <source src="img/MonkIA.jpeg" />
+      This browser doesn't support these formats
     </audio>
-    
-</body>
+    <video src="img/music.mp3" autoplay controls muted loop></video>
+<!-- Text formatting -->
+    <p>This is normal text</p>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <ins>inserted</ins> text</p>
+    <p>This is <deleted>deleted</deleted> text</p>
+    <p>This is <mark>marked</mark> text</p>
+
+    <!-- Lists -->
+    <h4>Unordered Lists</h4>
+    <ul>
+        <li>pizza dough</li>
+        <li>tomato sauce</li>
+        <li>cheese</li>
+        <li>toppings
+            <ul>
+                <li>mushrooms</li>
+                <li>pepperoni</li>
+                <li>ham</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>Ordered List</h4>
+    <ol>
+        <li>Brush teeth</li>
+        <li>take off clothes</li>
+        <li>take shower</li>
+        <li>go to bed</li>
+    </ol>
+
+    <h4>Description List</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>This adds structure to a web page</dd>
+        <dt>CSS</dt>
+        <dd>This adds style to a web page</dd>
+        <dt>JavaScript</dt>
+        <dd>This adds functionality to a web page</dd>
+    </dl>
+
+    <!-- Tables -->
+    <h3>Store hours</h3>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey">
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+            <th width="100">Sunday</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+  </body>
 </html>
