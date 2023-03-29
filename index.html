@@ -22,7 +22,7 @@
       This browser doesn't support these formats
     </audio>
     <video src="img/music.mp3" autoplay controls muted loop></video>
-<!-- Text formatting -->
+  <!-- Text formatting -->
     <p>This is normal text</p>
     <p>This is <b>bold</b> text</p>
     <p>This is <i>italic</i> text</p>
@@ -98,5 +98,69 @@
 
     <!-- Iframes -->
     <iframe src="https://www.bing.com" width="750" height="250">
+
+      <!-- Buttons -->
+    <a href="www.google.com"><button disabled style="background-color: azure; color: red; border-radius: 5px;">Click
+    me</button></a>
+    <button onclick="doSomething()">new button</button>
+
+    <p id="test">Hello</p>
+    <script>
+      function doSomething() {
+      document.getElementById("test").innerHTML = "Goodbye"
+      }
+    </script>
+
+    <!-- Forms -->
+    <form action="index.html" method="GET">
+      <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Fill out your first name" required>
+      </div>
+      <br>
+      <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Fill out your last name">
+      </div>
+      <br>
+      <div>
+        <label for="lname">last name:</label>
+        <input type="password" id="password" name="password" placeholder="Fill out your password">
+      </div>
+      <div>
+        <label for="lname">last name:</label>
+        <input type="number" id="number" name="number" min="0" max="100">
+      </div>
+      <div>
+        <label>Mrs.</label>
+        <input type="radio" name="title">
+
+        <label>Mr.</label>
+        <input type="radio" name="title">
+
+        <label>PhD.</label>
+        <input type="radio" name="title">
+      </div>
+
+      <div>
+        <label for="payment">payment:</label>
+        <select id="payment" name="payment">
+          <option value="iDeal">iDeal</option>
+          <option value="giftCard">Gift Card</option>
+          <option value="creditCard">Credit Card</option>
+        </select>
+      </div>
+      <div>
+        <label for="subscribe">Subscribe</label>
+        <input id="subscribe" type="checkbox" name="subscribe">
+      </div>
+      <div>
+        <input type="reset">
+      </div>
+      <br>
+      <div>
+        <input type="submit">
+      </div>
+    </form>
   </body>
 </html>
